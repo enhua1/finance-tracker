@@ -7,6 +7,7 @@ gem 'rails', '4.2.0'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
+gem 'stock_quote'
 
 gem 'bcrypt', '3.1.7'
 gem 'will_paginate', '3.0.7'
