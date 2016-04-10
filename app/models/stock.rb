@@ -22,6 +22,7 @@ class Stock < ActiveRecord::Base
     return "{opening_price} (Opening)" if opening_price
     'Unavailable'
   end
-
+# if opening price is unavailable, return opening price, if opening price is unavailable,
+#return unavailable. 
 
 end
