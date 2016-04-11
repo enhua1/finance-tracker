@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :user_stocks
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -8,6 +10,7 @@ Rails.application.routes.draw do
    get 'welcome/index', to: 'welcome#index'
    get 'my_portfolio', to: "users#my_portfolio"
    get 'search_stocks', to: "stocks#search"
+   resources :user_stocks, except: [:show, :edit, :update]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
